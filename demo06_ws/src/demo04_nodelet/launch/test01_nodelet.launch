@@ -1,0 +1,18 @@
+<launch>
+    <!-- 1.启动nodeletmanager（管理器） -->
+    <node name="dasun" pkg="nodelet" type="nodelet" args="manager" output="screen" />
+    
+    <!-- 2.添加节点xiaowang，参数是100 -->
+    <node name="xiaowang" pkg="nodelet" type="nodelet" args="load nodelet_tutorial_math/Plus dasun" output="screen" >
+        <param name="value" value="100"/> 
+    </node>
+    
+    <!-- 3.添加节点二狗，参数是-50，重映射：小王输出作为二狗的输入 -->
+    <node name="ergou" pkg="nodelet" type="nodelet" args="load nodelet_tutorial_math/Plus dasun" output="screen" >
+        <param name="value" value="-50"/>
+        <remap from="/ergou/in" to="/xiaowang/out"/>
+    </node>
+    
+    
+
+</launch>

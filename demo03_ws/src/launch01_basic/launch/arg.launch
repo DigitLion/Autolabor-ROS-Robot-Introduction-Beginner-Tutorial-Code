@@ -1,0 +1,16 @@
+<launch>
+    <!-- 需求：演示arg的使用，需要设置多个参数，这些参数使用的是同一个值（小车长度），怎么设置 -->
+    <!-- 
+    <param name="A" value="0.5"></param>
+    <param name="B" value="0.5"></param>
+    <param name="C" value="0.5"></param> 
+    -->
+    
+    <!-- 调用launch文件时动态传参格式:roslaunch launch01_basic arg.launch car_length:=0.6 -->
+    <arg name="car_length" default="0.55"></arg>
+
+    <param name="A" value="$(arg car_length)"></param>
+    <param name="B" value="$(arg car_length)"></param>
+    <param name="C" value="$(arg car_length)"></param>
+    
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/john/Dev/demo06_ws/devel
+
+Name: demo03_plugin
+Description: Description of demo03_plugin
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~int_param" : \b [int] 整数参数 min: 1, default: 10, max: 100
+- \b "~double_param" : \b [double] 双精度浮点参数 min: 0.0, default: 1.57, max: 3.14
+- \b "~bool_param" : \b [bool] 布尔参数 min: False, default: True, max: True
+- \b "~str_param" : \b [str] 字符串参数 min: , default: Hello param, max: 
+- \b "~list_param" : \b [int] 列表参数 min: 0, default: 0, max: 2
+

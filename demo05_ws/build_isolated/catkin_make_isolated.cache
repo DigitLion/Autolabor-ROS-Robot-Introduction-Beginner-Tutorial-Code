@@ -1,0 +1,2 @@
+urdf01_rviz
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/john/Dev/demo05_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/john/Dev/demo05_ws/install_isolated

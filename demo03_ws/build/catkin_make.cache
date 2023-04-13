@@ -1,0 +1,2 @@
+launch01_basic:plumbing_apis:plumbing_head:plumbing_head_src:plumbing_my:plumbing_param_server:plumbing_pub_sub:plumbing_server_client:plumbing_test:rename01_node:rename02_topic:rename03_param
+-DCATKIN_DEVEL_PREFIX=/home/john/demo03_ws/devel -DCMAKE_INSTALL_PREFIX=/home/john/demo03_ws/install -G Unix Makefiles

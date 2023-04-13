@@ -1,0 +1,11 @@
+<!-- 需要启动多个GUI节点 -->
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim"></node>
+    <!-- 名称重映射 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="t1"></node>
+    <!-- 命名空间 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" ns="ergouzi"></node>
+    <!-- 命名空间+名称重映射 -->
+    <node pkg="turtlesim" type="turtlesim_node" name="t2" ns="maolvzi"></node>
+
+</launch>

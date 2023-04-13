@@ -1,0 +1,8 @@
+prefix=/home/john/Dev/demo06_ws/install
+
+Name: demo02_dr
+Description: Description of demo02_dr
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

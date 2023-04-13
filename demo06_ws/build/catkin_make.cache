@@ -1,0 +1,2 @@
+demo01_action:demo02_dr:demo03_plugin:demo04_nodelet
+-DCATKIN_DEVEL_PREFIX=/home/john/Dev/demo06_ws/devel -DCMAKE_INSTALL_PREFIX=/home/john/Dev/demo06_ws/install -G Unix Makefiles

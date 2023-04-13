@@ -1,0 +1,2 @@
+rosbag_demo:rqt_demo:tf01_static:tf02_dynamic:tf03_tfs:tf04_test
+-DCATKIN_DEVEL_PREFIX=/home/john/demo04_ws/devel -DCMAKE_INSTALL_PREFIX=/home/john/demo04_ws/install -G Unix Makefiles

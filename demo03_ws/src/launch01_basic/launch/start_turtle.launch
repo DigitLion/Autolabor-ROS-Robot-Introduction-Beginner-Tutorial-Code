@@ -1,0 +1,44 @@
+<!-- <launch deprecated ="文件过时已弃用" > -->
+<launch>
+    <!-- 启动的节点 -->
+    <!-- pkg="包名" 节点所属的包 -->
+    <!-- type="nodeType" 节点类型(与之相同名称的可执行文件) -->
+    <!-- name="nodeName" 节点名称(在 ROS 网络拓扑中节点的名称) -->
+    <!-- args="xxx xxx xxx" (可选) 将参数传递给节点 -->
+    <!-- machine="机器名" 在指定机器上启动节点 -->
+    <!-- respawn = "true" 节点关闭后自动重新启动 respawn_delay = "1":respwan="true"情况下延迟1s重启 -->
+    <!-- required = "true" 是否为必要节点，如果是 则在该节点关闭后杀死整个roslaunch -->
+    <!-- ns = "hello" 在节点名称前分配namespace:hello 可以避免重名问题-->
+    <!-- clear_params = "true" 启动前删除节点私有空间内的所有参数 -->
+    <!-- output = "screen/log" 指定日志发送目标log:日志文件(默认) screen:屏幕 -->
+
+    <!-- param使用：向参数服务器设置参数 -->
+    <!-- param使用格式1：launch下，node外 -->
+    <param name="param_A" type="int" value="100"></param>
+
+    <!-- rosparam使用：操作参数服务器数据 -->
+    <!-- rosparam使用格式1：launch下，node外 -->
+    <!-- 加载参数 -->
+    <rosparam command="load" file="$(find launch01_basic)/launch/params.yaml"></rosparam>
+    <!-- 导出参数 -->
+    <!-- <rosparam command="dump" file="$(find launch01_basic)/launch/params_out.yaml"></rosparam> -->
+    <!--结果： 
+        roslaunch:
+        uris: 
+        host_ubuntu__46321: http://ubuntu:46321/
+        run_id: db47ba2e-b356-11ed-b6b3-731018d77f4d
+        结论：dump需要单独的launch文件
+     -->
+    <!-- 删除参数也放在单独launch文件中 -->
+    
+    <node pkg="turtlesim" type="turtlesim_node" name="myturtle" output="screen" required="true">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel"></remap>
+        <!-- param使用格式2：node下(放在了同一个namespace下) -->
+        <param name="param_B" type="double" value="2.5"></param>
+        <!-- rosparam使用格式2：node下(放在了同一个namespace下) -->
+        <rosparam command="load" file="$(find launch01_basic)/launch/params.yaml"></rosparam>
+    </node>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="my_key" output="screen"></node>
+
+
+</launch>

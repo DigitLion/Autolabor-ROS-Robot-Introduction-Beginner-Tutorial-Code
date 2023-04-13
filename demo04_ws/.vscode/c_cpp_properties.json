@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/john/demo03_ws/devel/include/**",
+                "/opt/ros/noetic/include/**",
+                "/home/john/demo01_ws/src/helloworld/include/**",
+                "/home/john/demo03_ws/src/launch01_basic/include/**",
+                "/home/john/demo03_ws/src/plumbing_apis/include/**",
+                "/home/john/demo03_ws/src/plumbing_head/include/**",
+                "/home/john/demo03_ws/src/plumbing_head_src/include/**",
+                "/home/john/demo03_ws/src/plumbing_param_server/include/**",
+                "/home/john/demo03_ws/src/plumbing_pub_sub/include/**",
+                "/home/john/demo03_ws/src/plumbing_server_client/include/**",
+                "/home/john/demo03_ws/src/plumbing_test/include/**",
+                "/home/john/demo03_ws/src/rename01_node/include/**",
+                "/home/john/demo03_ws/src/rename02_topic/include/**",
+                "/home/john/demo03_ws/src/rename03_param/include/**",
+                "/usr/include/**",
+                "/opt/ros/noetic/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

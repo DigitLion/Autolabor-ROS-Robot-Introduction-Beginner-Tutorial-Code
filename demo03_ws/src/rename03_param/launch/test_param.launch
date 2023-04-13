@@ -1,0 +1,10 @@
+<!-- 设置参数 -->
+<launch>
+    <!-- 格式1:全局 -->
+    <param name="radius" value="0.2"></param>
+    
+    <node pkg="turtlesim" type="turtlesim_node" name="t1" ns="xxx">
+        <!-- 格式2:私有 -->
+        <param name="radius" value="0.02"></param>
+    </node>
+</launch>

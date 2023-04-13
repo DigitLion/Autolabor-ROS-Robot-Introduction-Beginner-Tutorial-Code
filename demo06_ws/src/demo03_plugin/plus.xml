@@ -1,0 +1,15 @@
+<!-- 
+    需要定位动态链接库
+        library根标签下的path属性设置    
+    声明子类和父类
+        library的子标签class声明
+ -->
+ 
+<library path="lib/libplus" >
+    <class type="dbx_plugins_ns::SanBian" base_class_type="dbx_base_ns::Dbx_Base">
+        <description>这是正三边形插件</description>
+    </class>
+    <class type="dbx_plugins_ns::SiBian" base_class_type="dbx_base_ns::Dbx_Base">
+        <description>这是四边形插件</description>
+    </class>
+</library>

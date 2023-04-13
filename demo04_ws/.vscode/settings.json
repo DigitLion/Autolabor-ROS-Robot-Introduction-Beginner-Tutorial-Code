@@ -1,0 +1,17 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/john/demo03_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/john/demo04_ws/src",
+    "files.associations": {
+        "optional": "cpp",
+        "variant": "cpp"
+    },
+    "python.analysis.extraPaths": [
+        "/home/john/demo03_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "C_Cpp.errorSquiggles": "disabled",
+    "python.analysis.typeCheckingMode": "off"
+}

@@ -1,0 +1,5 @@
+<library path="lib/libmyplus">
+    <class type="my_nodelet::MyPlus" base_class_type="nodelet::Nodelet" name="demo04_nodelet/MyPlus">
+        <description>自定义插件</description>
+    </class>
+</library>

@@ -1,0 +1,8 @@
+# 1.目标数据变量
+int32 num
+---
+# 2.最终响应变量
+int32 result 
+---
+# 3.连续反馈变量
+float64 progress_bar 

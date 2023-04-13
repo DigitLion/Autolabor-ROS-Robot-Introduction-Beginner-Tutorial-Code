@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/john/Dev/demo06_ws/devel/include/**",
+                "/home/john/Dev/demo06_ws/src/demo03_plugin/include/*",
+                "/opt/ros/noetic/include/**",
+                "/usr/include/**",
+                "/opt/ros/noetic/include",
+                "${workspaceFolder}/devel/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

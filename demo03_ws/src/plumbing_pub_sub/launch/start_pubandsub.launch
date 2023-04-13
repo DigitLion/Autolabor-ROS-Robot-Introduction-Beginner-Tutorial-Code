@@ -1,0 +1,6 @@
+<launch>
+    <!-- 添加被执行节点-->
+    <!-- 乌龟GUI-->
+    <node pkg="plumbing_pub_sub" type="demo01_pub" name="erGouZi" />
+    <node pkg="plumbing_pub_sub" type="demo02_sub" name="cuiHua" />
+</launch>

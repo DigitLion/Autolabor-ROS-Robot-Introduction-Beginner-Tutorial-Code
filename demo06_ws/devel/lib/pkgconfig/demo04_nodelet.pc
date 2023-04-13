@@ -1,0 +1,8 @@
+prefix=/home/john/Dev/demo06_ws/devel
+
+Name: demo04_nodelet
+Description: Description of demo04_nodelet
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

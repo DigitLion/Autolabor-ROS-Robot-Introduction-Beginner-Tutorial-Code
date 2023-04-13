@@ -1,0 +1,11 @@
+<launch>
+    <!-- 发布 son1 相对于world以及 son2 峡谷对于world的坐标系 -->
+    <!-- 
+        当坐标系之间的相对位置固定时，那么所需参数也是固定的: 父系坐标名称、子级坐标系名称、x偏移量、y偏移量、z偏移量、x 翻滚角度、y俯仰角度、z偏航角度，
+        实现逻辑相同，参数不同，那么 ROS 系统就已经封装好了专门的节点，使用方式如下:
+        rosrun tf2_ros static_transform_publisher x偏移量 y偏移量 z偏移量 z偏航角度 y俯仰角度 x翻滚角度 父级坐标系 子级坐标系
+        示例:rosrun tf2_ros static_transform_publisher 0.2 0 0.5 0 0 0 /baselink /laser
+     -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="son1" args="5 0 0 0 0 0 /world /son1" output="screen"></node>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="son2" args="3 0 0 0 0 0 /world /son2" output="screen"></node>
+</launch>

@@ -1,0 +1,12 @@
+lenth: 0.5
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_ubuntu__41513: http://ubuntu:41513/
+rosversion: '1.15.15
+
+  '
+run_id: 2ae2fb46-a913-11ed-b39d-4ff1afbfe0c6
+width: 0.4
